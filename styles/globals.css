@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Ubuntu Mono", monospace;
   font-size: 10px; /* 1rem = 10px */
+  padding-bottom: 3rem;
 }
 
 a {
@@ -26,4 +27,26 @@ input {
   width: 100%;
   padding: 1.6rem 2.2rem;
   font-size: 2.6rem;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input {
+    font-size: 1.8rem;
+  }
 }

@@ -44,25 +44,25 @@
 
 .repo:nth-child(1) {
   background-color: #171736;
-  left: calc(50% - 2.2rem);
+  left: calc(50% - 3rem);
   top: -3rem;
 }
 
 .repo:nth-child(2) {
   background-color: #984553;
-  left: calc(50% - 2.2rem);
+  left: calc(50% - 3rem);
   bottom: -3rem;
 }
 
 .repo:nth-child(3) {
   background-color: #035e5e;
-  top: calc(50% - 2.2rem);
+  top: calc(50% - 3rem);
   left: -3rem;
 }
 
 .repo:nth-child(4) {
   background-color: #5d4f05;
-  top: calc(50% - 2.2rem);
+  top: calc(50% - 3rem);
   right: -3rem;
 }
 
@@ -135,5 +135,88 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .content h5,
+  .content p {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ringContainer {
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+  }
+
+  .ring {
+    border-width: 0.2rem;
+  }
+
+  .avatar {
+    padding: 5.5rem !important;
+  }
+
+  .repo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .repo:nth-child(1) {
+    left: calc(50% - 2.5rem);
+    top: -2.5rem;
+  }
+
+  .repo:nth-child(2) {
+    left: calc(50% - 2.5rem);
+    bottom: -2.5rem;
+  }
+
+  .repo:nth-child(3) {
+    top: calc(50% - 2.5rem);
+    left: -2.5rem;
+  }
+
+  .repo:nth-child(4) {
+    top: calc(50% - 2.5rem);
+    right: -2.5rem;
+  }
+
+  .starCount {
+    font-size: 1.4rem;
+  }
+
+  .star {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0.4rem;
+  }
+
+  .username {
+    font-size: 2.4rem;
+  }
+
+  .name {
+    font-size: 3.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .bio {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  .meta {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .content h5,
+  .content p {
+    font-size: 2.4rem;
   }
 }
