@@ -13,4 +13,17 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
 }
