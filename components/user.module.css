@@ -1,0 +1,137 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .ringContainer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .ringContainer:hover .ring, .ringContainer:hover .repoInfo {
+   animation-play-state: paused; 
+  }
+  
+  .avatar {
+      border-radius: 50%;
+      padding: 30px !important;
+  }
+  
+  .ring {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 4px dashed #e3e3e3;
+    border-radius: 50%;
+    animation: anticlockwise 100s linear infinite;
+    z-index: 2;
+  }
+  
+  .repo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .repo:nth-child(1) {
+    background-color: #171736;
+    left: calc(50% - 20px);
+    top: -20px;
+  }
+  
+  .repo:nth-child(2) {
+    background-color: #984553;
+    left: calc(50% - 20px);
+    bottom: -20px;
+  }
+  
+  .repo:nth-child(3) {
+    background-color: #035e5e;
+    top: calc(50% - 20px);
+    left: -20px;
+  }
+  
+  .repo:nth-child(4) {
+    background-color: #5d4f05;
+    top: calc(50% - 20px);
+    right: -20px;
+  }
+  
+  .repoInfo {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: clockwise 100s linear infinite;
+  }
+  
+  .starCount {
+    position: absolute;
+    font-size: 12px;
+  }
+  
+  .star {
+    font-size: 10px;
+    position: absolute;
+    bottom: 1px;
+  }
+  
+  .username {
+    font-size: 20px;
+  }
+  
+  .name {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+  
+  .bio {
+    font-size: 12px;
+    color: #a0a0a0;
+    max-width: 70%;
+  }
+  
+  .meta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 10px;
+    background-color: #2a163e;
+    color: #e3e3e3;
+    padding: 10px 0;
+  }
+  
+  .content h5,
+  .content p {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  
+  @keyframes anticlockwise {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes clockwise {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
